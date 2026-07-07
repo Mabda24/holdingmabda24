@@ -3,65 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>هلدینگ مبدا ۲۴ | تأمین‌کننده آهن‌آلات</title>
+    <title>هلدینگ مبدا ۲۴ | تأمین آهن‌آلات</title>
     <style>
-        body { font-family: Tahoma, sans-serif; margin:0; background: #f4f4f4; }
-        header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color:white; padding: 2rem; text-align:center; }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        h1, h2 { color: #1e3a8a; }
-        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 40px 0; }
-        .card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        footer { background: #1e3a8a; color: white; text-align: center; padding: 30px; }
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+        body { font-family: 'Vazirmatn', Tahoma, sans-serif; margin:0; background:#f8f9fa; color:#333; line-height:1.6; }
+        header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color:white; padding:70px 20px; text-align:center; }
+        nav { background:#1e40af; padding:15px 0; position:sticky; top:0; z-index:100; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
+        .container { max-width:1200px; margin:auto; padding:20px; }
+        h1 { font-size:2.8rem; margin:0; }
+        h2 { color:#1e3a8a; border-bottom:3px solid #3b82f6; padding-bottom:10px; }
+        .section { margin:60px 0; }
+        .services-grid, .projects-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:25px; }
+        .card { background:white; border-radius:12px; padding:20px; box-shadow:0 5px 20px rgba(0,0,0,0.1); }
+        .btn { background:#2563eb; color:white; padding:14px 35px; border:none; border-radius:8px; font-size:1.1rem; cursor:pointer; margin-top:20px; }
+        footer { background:#1e3a8a; color:white; text-align:center; padding:40px 20px; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>هلدینگ مبدا ۲۴</h1>
-    <p>تأمین‌کننده معتبر آهن‌آلات، پروفیل، ورق و محصولات فولادی در ایران</p>
-    <p style="font-size:1.2rem;">کیفیت بالا • قیمت رقابتی • تحویل سریع</p>
+    <p style="font-size:1.5rem;">تأمین‌کننده معتبر آهن‌آلات و محصولات فولادی</p>
 </header>
+
+<nav>
+    <div class="container">
+        <a href="#home">خانه</a>
+        <a href="#services">خدمات</a>
+        <a href="#about">درباره ما</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#contact">تماس با ما</a>
+    </div>
+</nav>
 
 <div class="container">
 
-    <h2>محصولات ما</h2>
-    <div class="products">
-        <div class="card">
-            <h3>میلگرد</h3>
-            <p>میلگرد آجدار و ساده در سایزهای مختلف (۸ تا ۴۰)</p>
-        </div>
-        <div class="card">
-            <h3>ورق فولادی</h3>
-            <p>ورق سیاه، روغنی، گالوانیزه، استیل</p>
-        </div>
-        <div class="card">
-            <h3>پروفیل و لوله</h3>
-            <p>پروفیل ساختمانی، لوله‌های درزدار و بدون درز</p>
-        </div>
-        <div class="card">
-            <h3>تیرآهن و نبشی</h3>
-            <p>تیرآهن IPE و HEA، نبشی و ناودانی</p>
-        </div>
-    </div>
+    <!-- خانه -->
+    <section id="home" class="section">
+        <h2>به هلدینگ مبدا ۲۴ خوش آمدید</h2>
+        <p>ما با سال‌ها تجربه در حوزه تجارت آهن‌آلات، آماده تأمین نیازهای پروژه‌های ساختمانی، صنعتی و عمرانی شما هستیم.</p>
+    </section>
 
-    <h2>چرا هلدینگ مبدا ۲۴؟</h2>
-    <ul>
-        <li>✅ تأمین مستقیم از کارخانه‌های بزرگ</li>
-        <li>✅ مشاوره فنی رایگان</li>
-        <li>✅ امکان خرید نقدی و اعتباری</li>
-        <li>✅ تحویل به سراسر کشور</li>
-        <li>✅ استانداردهای بین‌المللی</li>
-    </ul>
+    <!-- خدمات -->
+    <section id="services" class="section">
+        <h2>خدمات ما</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>تأمین آهن‌آلات</h3>
+                <p>میلگرد، تیرآهن، ورق، پروفیل و لوله با بهترین قیمت و کیفیت</p>
+            </div>
+            <div class="card">
+                <h3>مشاوره فنی</h3>
+                <p>انتخاب محصول مناسب برای پروژه شما</p>
+            </div>
+            <div class="card">
+                <h3>تحویل سریع</h3>
+                <p>ارسال به تمام نقاط ایران با ناوگان اختصاصی</p>
+            </div>
+            <div class="card">
+                <h3>خرید اعتباری</h3>
+                <p>امکان خرید نقدی و تسویه اعتباری برای مشتریان ثابت</p>
+            </div>
+        </div>
+    </section>
 
-    <h2>تماس با ما</h2>
-    <p>📞 شماره تماس: [شماره تلفن خود را وارد کنید]</p>
-    <p>📧 ایمیل: info@mabda24.com</p>
-    <p>📍 آدرس: [آدرس دفتر یا انبار]</p>
+    <!-- درباره ما -->
+    <section id="about" class="section">
+        <h2>درباره ما</h2>
+        <p>هلدینگ مبدا ۲۴ با تکیه بر اصول صداقت، کیفیت و professionalism فعالیت خود را آغاز کرده و امروز به یکی از تأمین‌کنندگان قابل اعتماد آهن‌آلات در سطح کشور تبدیل شده است.</p>
+        <p>هدف ما ارائه بهترین خدمات با مناسب‌ترین قیمت به مشتریان عزیز است.</p>
+    </section>
+
+    <!-- پروژه‌ها -->
+    <section id="projects" class="section">
+        <h2>پروژه‌های انجام شده</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <h3>پروژه ساختمانی مسکونی</h3>
+                <p>تأمین بیش از ۲۰۰ تن میلگرد و تیرآهن</p>
+            </div>
+            <div class="card">
+                <h3>کارخانه صنعتی</h3>
+                <p>تأمین ورق و پروفیل مورد نیاز خط تولید</p>
+            </div>
+            <div class="card">
+                <h3>پروژه عمرانی</h3>
+                <p>ارائه محصولات فولادی برای پل و سازه</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- تماس با ما -->
+    <section id="contact" class="section">
+        <h2>تماس با ما</h2>
+        <div class="card">
+            <p><strong>📞 تلفن:</strong> [شماره تلفن خود را اینجا وارد کنید]</p>
+            <p><strong>📱 واتساپ:</strong> [شماره واتساپ]</p>
+            <p><strong>📧 ایمیل:</strong> info@mabda24.com</p>
+            <p><strong>📍 آدرس:</strong> [آدرس دفتر یا انبار خود را بنویسید]</p>
+            <button class="btn" onclick="alert('✅ پیام شما دریافت شد. به زودی با شما تماس می‌گیریم.')">ارسال پیام</button>
+        </div>
+    </section>
 
 </div>
 
 <footer>
     <p>© ۱۴۰۵ هلدینگ مبدا ۲۴ - تمام حقوق محفوظ است</p>
+    <p>کیفیت تضمینی • تحویل سریع • قیمت مناسب</p>
 </footer>
 
 </body>
