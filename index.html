@@ -6,22 +6,21 @@
     <title>آهن مبدأ ۲۴ | محصولات فولادی</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap');
-        body { font-family: 'Vazirmatn', sans-serif; margin:0; color:#333; background:#f8f9fa; }
+        body { font-family: 'Vazirmatn', sans-serif; margin:0; color:#333; }
         header { 
-            background: linear-gradient(rgba(30,58,138,0.85), rgba(30,58,138,0.9)), 
-                        url('https://picsum.photos/id/1015/2000/1200') center/cover; 
-            color:white; padding:120px 20px; text-align:center; 
+            background: linear-gradient(rgba(30,58,138,0.85), rgba(30,58,138,0.9)), url('https://picsum.photos/id/1015/2000/1200') center/cover; 
+            color:white; padding:140px 20px; text-align:center; 
         }
-        .logo { max-width: 260px; margin-bottom: 15px; }
-        nav { background:#0f172a; padding:15px 0; position:sticky; top:0; z-index:100; }
-        nav a { color:white; margin:0 12px; text-decoration:none; font-weight:500; }
-        .container { max-width:1280px; margin:auto; padding:20px; }
-        h1, h2 { color:#1e3a8a; }
+        .logo { max-width: 280px; margin-bottom: 20px; }
+        nav { background:#0f172a; padding:18px 0; position:sticky; top:0; z-index:100; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
+        .section { padding:80px 20px; background-size:cover; background-position:center; position:relative; }
+        .section::before { content:""; position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.6); z-index:1; }
+        .section-content { position:relative; z-index:2; max-width:1280px; margin:auto; }
+        h1, h2 { color:white; }
         .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:25px; }
-        .card { background:white; border-radius:12px; padding:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); }
-        .stats { display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin:40px 0; text-align:center; }
-        .btn { background:#1e40af; color:white; padding:14px 35px; border:none; border-radius:8px; cursor:pointer; }
-        footer { background:#0f172a; color:#ccc; padding:50px 20px; text-align:center; }
+        .card { background:white; border-radius:12px; padding:25px; box-shadow:0 10px 30px rgba(0,0,0,0.15); }
+        .btn { background:#1e40af; color:white; padding:16px 40px; border:none; border-radius:50px; cursor:pointer; }
     </style>
 </head>
 <body>
@@ -29,70 +28,69 @@
 <header>
     <img src="https://files.catbox.moe/5D23344D-09EC-4EA6-A113-6E877034E389.png" alt="لوگو" class="logo">
     <h1>آهن مبدأ ۲۴</h1>
-    <p style="font-size:1.5rem;">تهیه و توزیع انواع محصولات فولادی و مواد اولیه زنجیره تولید</p>
+    <p style="font-size:1.6rem;">تهیه و توزیع انواع محصولات فولادی و مواد اولیه زنجیره تولید</p>
 </header>
 
 <nav>
-    <div class="container" style="text-align:center;">
+    <div class="container" style="text-align:center; max-width:1280px; margin:auto;">
         <a href="#">صفحه اصلی</a>
         <a href="#services">خدمات</a>
         <a href="#about">درباره ما</a>
-        <a href="#blog">بلاگ</a>
         <a href="#projects">پروژه‌ها</a>
-        <a href="#clients">مشتریان</a>
         <a href="#contact">ارتباط با ما</a>
     </div>
 </nav>
 
-<div class="container">
-
-    <section id="services">
+<!-- خدمات -->
+<section id="services" class="section" style="background-image:url('https://picsum.photos/id/1015/2000/1200');">
+    <div class="section-content">
         <h2>خدمات و محصولات ما</h2>
         <div class="grid">
             <div class="card">ورق سیاه، روغنی، گالوانیزه</div>
             <div class="card">پروفیل، میلگرد، تیرآهن</div>
             <div class="card">نبشی، ناودانی، شمش</div>
-            <div class="card">گندله، آهن اسفنجی</div>
-            <div class="card">واردات و صادرات</div>
+            <div class="card">گندله، آهن اسفنجی و واردات/صادرات</div>
             <div class="card">فروش عمده و خرده</div>
         </div>
-    </section>
-
-    <section id="about">
-        <h2>درباره ما</h2>
-        <div class="card">
-            <p>آهن مبدأ ۲۴ متخصص در تهیه و توزیع انواع محصولات فولادی و مواد اولیه زنجیره تولید با استانداردهای جهانی است.</p>
-        </div>
-    </section>
-
-    <div class="stats">
-        <div><h2>۲۵k+</h2><p>مشتریان</p></div>
-        <div><h2>۱۲۰۰+</h2><p>پروژه‌ها</p></div>
-        <div><h2>۱۵+</h2><p>در حال اجرا</p></div>
     </div>
+</section>
 
-    <section id="projects">
+<!-- درباره ما -->
+<section id="about" class="section" style="background-image:url('https://picsum.photos/id/201/2000/1200');">
+    <div class="section-content">
+        <h2>درباره آهن مبدأ ۲۴</h2>
+        <div class="card" style="max-width:900px; margin:auto;">
+            <p>آهن مبدأ ۲۴ با استانداردهای جهانی در زمینه تهیه و توزیع انواع محصولات فولادی و مواد اولیه زنجیره تولید فعالیت می‌کند.</p>
+        </div>
+    </div>
+</section>
+
+<!-- پروژه‌ها -->
+<section id="projects" class="section" style="background-image:url('https://picsum.photos/id/133/2000/1200');">
+    <div class="section-content">
         <h2>پروژه‌ها</h2>
         <div class="grid">
-            <div class="card">پروژه شماره یک</div>
-            <div class="card">پروژه شماره دو</div>
-            <div class="card">پروژه شماره سه</div>
+            <div class="card">پروژه ساختمانی بزرگ</div>
+            <div class="card">تأمین کارخانه صنعتی</div>
+            <div class="card">پروژه‌های عمرانی</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact">
+<!-- تماس -->
+<section id="contact" class="section" style="background-image:url('https://picsum.photos/id/180/2000/1200');">
+    <div class="section-content">
         <h2>ارتباط با ما</h2>
-        <div class="card">
+        <div class="card" style="max-width:700px; margin:auto; text-align:center;">
             <p><strong>📍 آدرس:</strong><br>تهران، خیابان شریعتی، ۵۰ متر بالاتر از پل سید خندان، نبش کوچه خندان، پلاک ۹۳۸، طبقه همکف، واحد ۱</p>
             <p><strong>📞 تلفن:</strong><br>
             ۰۲۱-۲۲۸۵۹۰۲۳<br>
             ۰۹۱۲۲۲۹۰۲۵۹<br>
             ۰۹۱۲۳۰۲۳۴۲۰</p>
-            <button class="btn" onclick="alert('پیام شما ثبت شد!')">ارسال پیام</button>
+            <button class="btn" onclick="alert('✅ پیام شما ثبت شد. به‌زودی تماس می‌گیریم.')">ارسال پیام</button>
         </div>
-    </section>
-
-</div>
+    </div>
+</section>
 
 <footer>
     <p>© ۱۴۰۵ آهن مبدأ ۲۴ - تمام حقوق محفوظ است</p>
