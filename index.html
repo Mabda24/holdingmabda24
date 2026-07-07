@@ -10,13 +10,12 @@
         header { background: linear-gradient(rgba(30,58,138,0.9), rgba(30,58,138,0.95)), url('https://picsum.photos/id/1015/2000/1200') center/cover; color:white; padding:100px 20px; text-align:center; }
         .logo { max-width: 260px; margin-bottom: 15px; }
         nav { background:#0f172a; padding:15px 0; position:sticky; top:0; z-index:100; }
-        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
+        nav a { color:white; margin:0 12px; text-decoration:none; font-weight:500; }
         .container { max-width:1280px; margin:auto; padding:20px; }
         h1, h2 { color:#1e3a8a; }
-        .stats { display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin:40px 0; }
-        .stat { text-align:center; }
         .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:25px; }
         .card { background:white; border-radius:12px; padding:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); }
+        .stats { display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin:40px 0; text-align:center; }
         .btn { background:#1e40af; color:white; padding:14px 35px; border:none; border-radius:8px; cursor:pointer; }
         footer { background:#0f172a; color:#ccc; padding:50px 20px; text-align:center; }
     </style>
@@ -24,7 +23,7 @@
 <body>
 
 <header>
-    <img src="https://files.catbox.moe/5D23344D-09EC-4EA6-A113-6E877034E389.png" alt="آهن مبدأ ۲۴" class="logo">
+    <img src="https://files.catbox.moe/5D23344D-09EC-4EA6-A113-6E877034E389.png" alt="لوگو" class="logo">
     <h1>آهن مبدأ ۲۴</h1>
     <p style="font-size:1.5rem;">تهیه و توزیع انواع محصولات فولادی و مواد اولیه زنجیره تولید</p>
 </header>
@@ -32,37 +31,22 @@
 <nav>
     <div class="container" style="text-align:center;">
         <a href="#">صفحه اصلی</a>
-        <a href="#about">درباره ما</a>
         <a href="#services">خدمات</a>
+        <a href="#about">درباره ما</a>
+        <a href="#blog">بلاگ</a>
         <a href="#projects">پروژه‌ها</a>
-        <a href="#contact">تماس با ما</a>
+        <a href="#clients">مشتریان</a>
+        <a href="#contact">ارتباط با ما</a>
     </div>
 </nav>
 
 <div class="container">
 
-    <!-- آمار -->
-    <div class="stats">
-        <div class="stat"><h2>۲۵k+</h2><p>پروژه موفق</p></div>
-        <div class="stat"><h2>۱.۴٪</h2><p>رشد سالانه</p></div>
-        <div class="stat"><h2>۴.۵</h2><p>امتیاز مشتریان</p></div>
-        <div class="stat"><h2>۲.۵mil+</h2><p>تن محصول توزیع شده</p></div>
-    </div>
-
-    <!-- درباره ما -->
-    <section id="about">
-        <h2>درباره ما</h2>
-        <div class="card">
-            <p>آهن مبدأ ۲۴ با استانداردهای جهانی فعالیت می‌کند و متخصص در تهیه و توزیع انواع محصولات فولادی و مواد اولیه زنجیره تولید است.</p>
-            <p>ما با سال‌ها تجربه، تضمین می‌کنیم که بهترین کیفیت و قیمت را به مشتریان خود ارائه دهیم.</p>
-        </div>
-    </section>
-
-    <!-- خدمات / محصولات -->
+    <!-- خدمات -->
     <section id="services">
-        <h2>محصولات و خدمات ما</h2>
+        <h2>خدمات ما</h2>
         <div class="grid">
-            <div class="card">ورق سیاه، روغنی، گالوانیزه</div>
+            <div class="card">انواع ورق سیاه، روغنی، گالوانیزه</div>
             <div class="card">پروفیل، میلگرد، تیرآهن</div>
             <div class="card">نبشی، ناودانی، شمش</div>
             <div class="card">گندله، آهن اسفنجی</div>
@@ -71,12 +55,49 @@
         </div>
     </section>
 
+    <!-- درباره ما -->
+    <section id="about">
+        <h2>درباره ما</h2>
+        <div class="card">
+            <p>آهن مبدأ ۲۴ با هدف تأمین نیازهای صنایع مختلف در زمینه تهیه و توزیع انواع محصولات فولادی و مواد اولیه زنجیره تولید فعالیت می‌کند.</p>
+            <p>ما با استانداردهای جهانی، کیفیت بالا و قیمت رقابتی، آماده خدمت‌رسانی به مشتریان عزیز هستیم.</p>
+        </div>
+    </section>
+
+    <!-- آمار -->
+    <div class="stats">
+        <div><h2>۲۵k+</h2><p>مشتریان</p></div>
+        <div><h2>۱۲۰۰+</h2><p>پروژه‌ها</p></div>
+        <div><h2>۱۵+</h2><p>در حال اقدام</p></div>
+    </div>
+
+    <!-- پروژه‌ها -->
+    <section id="projects">
+        <h2>پروژه‌ها</h2>
+        <div class="grid">
+            <div class="card">پروژه شماره یک</div>
+            <div class="card">پروژه شماره دو</div>
+            <div class="card">پروژه شماره سه</div>
+            <div class="card">پروژه شماره چهار</div>
+        </div>
+    </section>
+
+    <!-- بلاگ -->
+    <section id="blog">
+        <h2>مقالات</h2>
+        <div class="grid">
+            <div class="card">مقاله شماره یک</div>
+            <div class="card">مقاله شماره دو</div>
+            <div class="card">مقاله شماره سه</div>
+        </div>
+    </section>
+
     <!-- تماس -->
     <section id="contact">
-        <h2>تماس با ما</h2>
+        <h2>ارتباط با ما</h2>
         <div class="card">
             <p><strong>📍 آدرس:</strong><br>تهران، خیابان شریعتی، ۵۰ متر بالاتر از پل سید خندان، نبش کوچه خندان، پلاک ۹۳۸، طبقه همکف، واحد ۱</p>
-            <p><strong>📞 تلفن‌ها:</strong><br>
+            <p><strong>📞 تلفن:</strong><br>
             ۰۲۱-۲۲۸۵۹۰۲۳<br>
             ۰۹۱۲۲۲۹۰۲۵۹<br>
             ۰۹۱۲۳۰۲۳۴۲۰</p>
